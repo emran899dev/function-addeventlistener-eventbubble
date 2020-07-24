@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events Explorers</h1>
+    <button>Clicked-1</button>
+    <button id="second-item">Clicked-2</button>
+    <button>Clicked-3</button>
+    <button id="list-item">Clicked-4</button>
+
+    <script>
+
+        let listItem = document.getElementById('list-item').addEventListener('click',function(){
+            document.body.style.color = 'green'
+        })
+
+        // function handlerClick(){
+        //     document.body.style.backgroundColor = 'red'
+        // }
+
+        // var secondButton = document.getElementById('second-item');
+        // // secondButton.onclick = handlerClick;
+        // secondButton.addEventListener('click', handlerClick)
+         
+    </script>
+</body>
+</html>

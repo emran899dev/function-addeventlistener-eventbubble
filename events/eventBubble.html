@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+</head>
+<body>
+    <div id="container">
+        <h1>My list</h1>
+        <ul id="myList">
+            <li class = "item" id="first">Lorem, ipsum dolor.</li>
+            <li class = "item">Facere, a ad.</li>
+            <li class = "item">Minus, vero obcaecati.</li>
+            <li class = "item">Nihil, temporibus! Accusamus.</li>
+            <li class = "item">Similique, voluptas illo.</li>
+        </ul>
+        <button id="newAdd">addNew item</button>
+    </div>
+    <script>
+
+    //    let items = document.getElementsByClassName('item')
+    //    for (let i = 0; i < items.length; i++) {
+    //        let item = items[i];
+    //     //    console.log(item);
+    //     item.addEventListener('click',function(event){
+    //          event.target.parentNode.removeChild(event.target) 
+    //     })
+    //    }
+
+       document.getElementById('newAdd').addEventListener('click', function(event){
+           let itemParent = document.getElementById('myList')
+           let newItem = document.createElement('li')
+           newItem.innerText = 'Brand New'
+           itemParent.appendChild(newItem)
+       })
+
+       document.getElementById('myList').addEventListener('click',function(event){
+        //    console.log(this,event.target);
+           event.target.parentNode.removeChild(event.target)
+       })
+
+         
+    </script>
+</body>
+</html>

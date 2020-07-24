@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+</head>
+<body>
+    <div id="container">
+        <h1>My list</h1>
+        <ul id="myList">
+            <li class = "item" id="first">Lorem, ipsum dolor.</li>
+            <li class = "item">Facere, a ad.</li>
+            <li class = "item">Minus, vero obcaecati.</li>
+            <li class = "item">Nihil, temporibus! Accusamus.</li>
+            <li class = "item">Similique, voluptas illo.</li>
+        </ul>
+    </div>
+    <script>
+
+        document.getElementById('myList').addEventListener('click',function(){
+            console.log('click Ul item');
+            
+        })
+
+        document.getElementById('first').addEventListener('click',function(){
+            console.log('click first item');
+            event.stopPropagation()
+        })
+
+        document.getElementById('container').addEventListener('click',function(){
+            console.log('click main container');
+        })
+    </script>
+</body>
+</html>
